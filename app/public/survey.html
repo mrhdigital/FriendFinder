@@ -181,7 +181,7 @@
           <img id="match-img" src="https://d3n8a8pro7vhmx.cloudfront.net/taxpayers/pages/679/attachments/original/1499663166/4-ways-cheer-up-depressed-cat.jpg?1499663166" alt="">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default reset" data-dismiss="modal">Close</button>
         </div>
       </div>
 
@@ -266,6 +266,11 @@
       } else {
         alert("Please fill out all fields before submitting!");
       }
+    });
+
+    // Return user to home page after modal is closed 
+    $(".reset").on("click", function(){
+    	window.location.href = "/"; 
     });
   </script>
 
